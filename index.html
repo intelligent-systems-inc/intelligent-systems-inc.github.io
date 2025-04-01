@@ -9,21 +9,35 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
-            text-align: center;
+            text-align: left;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: #212121;
             color: white;
         }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+        .content {
+            width: 60%;
+            margin: 10px auto;
+            padding: 50px;
+            outline: 2px solid #212121;
+            align-items: center;
+            justify-content: center;
+        }
+        .main {
+            width: 90%;
+            margin: inherit;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            outline: 2px solid #212121;
         }
         h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
         }
         .loader {
             border: 4px solid rgba(255, 255, 255, 0.3);
@@ -32,16 +46,100 @@
             width: 50px;
             height: 50px;
             animation: spin 1s linear infinite;
+            margin-top: 20px;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: lighter;
+            color: #ffffff;
+            background: #212121;
+            width: 100%;
+        }
     </style>
 </head>
+
+
 <body>
-<h1>An Intelligent API Service Layer</h1>
-<h2>Coming Soon</h2>
-<div class="loader"></div>
+
+
+<div class="content">
+    <h1>
+        <span style="color: #FECC1B;">C</span><span style="color: #3DEFE9;">x</span><span style="color: rgb(244 121 142);">A</span><span style="color: #6BD968;">g</span>
+        <span style="font-size: 3rem; font-weight: normal">generates the <span>backend wiring code</span> for your frontend application so you don't have to.</span>
+    </h1>
+<div class="main">
+    <div class="q1" style="padding-top: 30px">
+        <h2>
+            Q. What is <span>backend wiring</span>?
+            </h2><h2>
+            A. The hooks that contain the API calls to your backend. These hooks are then used by your frontend components. See example.
+        </h2>
+    </div>
+
+    <div class="q2" style="padding-top: 30px">
+        <h2>
+            Q. Oh the fetch calls in frontend? I use AI for that.
+        </h2><h2>
+            A. Yeah we do too! But have you ever deployed any AI generated code without looking it over first?
+            <br><br>
+            LLMs are great but don’t work without human supervision. They require specific prompts and extensive guard-rails and continuous testing for reliable, production-ready generations. Read more on our experiments to generate OpenAPI specs from backend.
+            <br><br>
+            CxAg saves you all that work!
+
+        </h2>
+    </div>
+
+    <div class="q3" style="padding-top: 30px">
+        <h2>
+            Q. Like I said: it is just fetch calls. They are simple enough that I can manage any corrections myself.<span style="font-size: xx-large">🤷💅</span>
+        </h2><h2>
+            A. Exactly. You shouldn’t have to.
+            <br><br>
+            AI-assisted development will scale only if generations have a degree of reliability. It’s the same as working with a junior engineer—if you had to rewrite their code every time, you wouldn’t call it help. CxAg makes sure the ‘junior’ gets it right the first time.
+            <br><br>
+            This is the beginning of the future. Read our vision.
+
+        </h2>
+    </div>
+
+
+    <!-- note to self: this is not about replacing humans in a human oriented workflow. This is about replacing humans in an AI workflow. That is why I am saying "this is the future, hop on"
+
+    <div class="q4" style="padding-top: 30px">
+        <h2>
+            Q. Is this even worth it?
+        </h2><h2>
+        A. I know we treat documentation lightly. Think about what APIs represent. Knowing how to access an API is the foundation of building anything meaningful. AI is limited in its own way. Think about what documentation is creating meaningful context for AI.
+        <br><br>
+        If documentation of APIs cannot be solved for, we are far away from a world where software writes itself. Presenting AI with an understanding of any given API is a foundational element.
+    </h2>
+    </div>-->
+
+
+    <div class="q4" style="padding-top: 30px">
+        <h2>
+            Q. Ok so how does this work exactly?
+        </h2><h2>
+        A. Glad you asked! :D
+        <br><br>
+        See docs.
+    </h2>
+    </div>
+</div>
+</div>
+
+<footer>
+    2025 &copy; Intelligent Systems Laboratory
+</footer>
+
 </body>
+
 </html>
